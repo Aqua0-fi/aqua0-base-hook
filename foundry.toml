@@ -32,8 +32,5 @@ bracket_spacing = false
 [rpc_endpoints]
 base_sepolia = "${BASE_SEPOLIA_RPC_URL}"
 
-[etherscan]
-base_sepolia = { key = "${ETHERSCAN_API_KEY}", chain = 84532 }
-
 [lint]
 lint_on_build = false

@@ -96,6 +96,8 @@ Your hook appears in the explorer within seconds. It registers itself with the S
 | Uniswap v4 PoolManager | `0x05E73354cFDd6745C338b50BcFDfA3Aa6fA03408` |
 | Uniswap PoolSwapTest (router) | `0x8B5bcC363ddE2614281aD875bad385E0A785D3B9` |
 
+All of these are source-verified on Sourcify; browse them on [Blockscout](https://base-sepolia.blockscout.com/address/0x3387fDCf3B8A8a935C9627f033f94Df1cbAbC700?tab=contract).
+
 Four pools are live and seeded with shared liquidity: mWETH/mUSDC on the default hook, on SwapCounterHook (dynamic fee) and on YieldParkingHook, plus mWBTC/mUSDC. The full list with pool ids is in [`deployments/base-sepolia.json`](deployments/base-sepolia.json).
 
 Gas: get Base Sepolia ETH from the [Coinbase](https://portal.cdp.coinbase.com/products/faucet), [Alchemy](https://www.alchemy.com/faucets/base-sepolia) or [Superchain](https://console.optimism.io/faucet) faucets. Test tokens: call `faucet()` on any factory token, or use the explorer's **Tokens & faucet** tab, where anyone can also launch their own token.

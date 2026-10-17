@@ -95,6 +95,14 @@ The script reads `deployments/base-sepolia.json` and:
 
 Open the explorer: your hook shows up as soon as its constructor runs, and the pool as soon as it is initialized.
 
+Optional, so others can read your code on [Blockscout](https://base-sepolia.blockscout.com) (no API key needed):
+
+```bash
+forge verify-contract --chain 84532 --verifier sourcify \
+  --constructor-args $(cast abi-encode "c(address,address)" 0x05E73354cFDd6745C338b50BcFDfA3Aa6fA03408 0x3387fDCf3B8A8a935C9627f033f94Df1cbAbC700) \
+  <your-hook-address> src/examples/HookTemplate.sol:HookTemplate
+```
+
 ## 5. Test locally
 
 `test/utils/Aqua0TestBase.sol` sets up a fresh PoolManager, the SLP, a default hook, and helpers for deploying a hook at a flagged address, depositing and adding positions:
