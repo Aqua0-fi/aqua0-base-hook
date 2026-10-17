@@ -1,8 +1,8 @@
-lib
-out
-cache
-broadcast
-test
-script
-app/node_modules
-app/dist
+/lib
+/out
+/cache
+/broadcast
+/test
+/script
+/app/node_modules
+/app/dist
