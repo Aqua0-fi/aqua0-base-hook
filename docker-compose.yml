@@ -1,0 +1,8 @@
+services:
+  explorer:
+    build: .
+    image: edge-city-aqua0-residency
+    container_name: edge-city-aqua0-residency
+    ports:
+      - "8787:80"
+    restart: unless-stopped

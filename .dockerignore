@@ -1,0 +1,11 @@
+lib
+out
+cache
+broadcast
+test
+script
+docs
+.git
+app/node_modules
+app/dist
+**/.DS_Store

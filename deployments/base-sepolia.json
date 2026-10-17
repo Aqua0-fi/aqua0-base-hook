@@ -1,0 +1,31 @@
+{
+  "chainId": 84532,
+  "network": "base-sepolia",
+  "startBlock": 48254230,
+  "deployer": "0x19A207582d8a2101930462cB3BF364A16573a8bD",
+  "contracts": {
+    "poolManager": "0x05E73354cFDd6745C338b50BcFDfA3Aa6fA03408",
+    "poolSwapTest": "0x8B5bcC363ddE2614281aD875bad385E0A785D3B9",
+    "stateView": "0x571291b572ed32ce6751a2Cb2486EbEe8DEfB9B4",
+    "sharedLiquidityPool": "0x3387fDCf3B8A8a935C9627f033f94Df1cbAbC700",
+    "aqua0Hook": "0x28ee0516a4AF45b5DFA7037C5A5CE9e608D500c0",
+    "aqua0Lens": "0x1cd30dcaefba04143088a3eB14978839E5AEdbeA",
+    "aqua0QuoteHelper": "0x25D6437843d2F711199489eAA47A6596cc888D54",
+    "tokenFactory": "0x6d23269949781f859c1eeBD429D85Df735a7FE28",
+    "swapCounterHook": "0x8819d712dAf2963d64285698FeB35f82919780C0",
+    "yieldParkingHook": "0x4f2cE7f53622B26EEEA5Af9C86F15C16B37000C0",
+    "mockAaveUsdc": "0x41E06Ee7a045432AfA5B6cc0dA1de2e183d7c8A6",
+    "mockAaveWeth": "0x86a2fF49cae45B4F2af81592239135A0DaEcc278"
+  },
+  "tokens": {
+    "mUSDC": "0xdA00a9D793a863c79033C89707Fce1b9eE959a05",
+    "mWETH": "0xBD6b1A82837932DFC5a2CCaf837f1c16f0fdd5FB",
+    "mWBTC": "0x55CE234871d999F0D14D244Ee8ce63a9d384C6Ae"
+  },
+  "pools": [
+    { "name": "mWETH/mUSDC 0.30% (Aqua0Hook)", "poolId": "0x75e5518bc57f55c0788b2d0531b8468c02ec6793bc202ea3f1fab2a6b01b67b8", "currency0": "0xBD6b1A82837932DFC5a2CCaf837f1c16f0fdd5FB", "currency1": "0xdA00a9D793a863c79033C89707Fce1b9eE959a05", "fee": 3000, "tickSpacing": 60, "hooks": "0x28ee0516a4AF45b5DFA7037C5A5CE9e608D500c0" },
+    { "name": "mWBTC/mUSDC 0.30% (Aqua0Hook)", "poolId": "0xdc9d8d58bdbba9b5e3853a2a2744444261892f2da2f8b1aaddd51f4916899d21", "currency0": "0x55CE234871d999F0D14D244Ee8ce63a9d384C6Ae", "currency1": "0xdA00a9D793a863c79033C89707Fce1b9eE959a05", "fee": 3000, "tickSpacing": 60, "hooks": "0x28ee0516a4AF45b5DFA7037C5A5CE9e608D500c0" },
+    { "name": "mWETH/mUSDC dynamic (SwapCounterHook)", "poolId": "0x6ce7a852b4cd166111f1fb443984c9ba0204ec068f077b26930db09861eb1ae1", "currency0": "0xBD6b1A82837932DFC5a2CCaf837f1c16f0fdd5FB", "currency1": "0xdA00a9D793a863c79033C89707Fce1b9eE959a05", "fee": 8388608, "tickSpacing": 60, "hooks": "0x8819d712dAf2963d64285698FeB35f82919780C0" },
+    { "name": "mWETH/mUSDC 0.05% (YieldParkingHook)", "poolId": "0xe163355ed7cf7d3b6bc63536804728f8a99126f6077d70156a108a4e6f3f623f", "currency0": "0xBD6b1A82837932DFC5a2CCaf837f1c16f0fdd5FB", "currency1": "0xdA00a9D793a863c79033C89707Fce1b9eE959a05", "fee": 500, "tickSpacing": 10, "hooks": "0x4f2cE7f53622B26EEEA5Af9C86F15C16B37000C0" }
+  ]
+}
